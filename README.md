@@ -7,7 +7,7 @@ import  [NAME]        Import a file from your shatter list
 export  [NAME] [PATH] Exports a file/directory to your shatter list
 ```
 
-##installation
+## installation
 ```
 git clone https://github.com/Flubbex/shatter.git
 cd shatter && npm install
