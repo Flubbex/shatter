@@ -4,7 +4,8 @@
   "description": "Node CLI helper for easy cataloguing of JavaScript files",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "shatter":"node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
   "homepage": "https://github.com/Flubbex/shatter#readme",
   "dependencies": {
     "commander": "^2.16.0",
-    "require-all": "^3.0.0",
-    "diskdb": "^0.1.17"
+    "diskdb": "^0.1.17",
+    "require-all": "^3.0.0"
   }
 }
