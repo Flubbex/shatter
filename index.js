@@ -1,19 +1,29 @@
 var core = require("commander"),
-    all  = require("require-all")
+    all  = require("require-all"),
+    db   = require("diskdb"),
     
-core.version('1.0.0')
+    version = '0.1.0'
+    
+core.version(version)
 
-var util = all(__dirname+"/util"),
-    api  = all({ dirname: __dirname+"/api",
+var _c= console.log
+
+console.log = function(){}
+
+var list = db.connect(__dirname, ['shattered.json'])
+
+console.log = _c
+
+var api  = all({ dirname: __dirname+"/api",
                  resolve: function(method){
-                    return method(core,util)
+                    return method(core,list)
                   }
                })
     
 
 core.on('command:*',(commands) => console.log('Unknown command:',commands.join(' ')) )
 
-console.log("Example application")
+console.log("Shatter",version)
 
 if (process.argv.length > 2)
   core.parse(process.argv) 

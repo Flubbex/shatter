@@ -1,22 +1,10 @@
-# commander-starter-kit
-Starting kit for Commander.js applications
+# Shatter
+Node CLI helper for easy cataloguing of JavaScript files
 
 ## Usage
-Creating a new command:
-
-*api/example.js*
-```js 
-function action(argument, options){
-    console.log("Example:",argument)
-}
-  
-module.exports = function(program,utilities)
-{
-  program
-  .command('example [argument]')
-  .description('Prints argument to screen')
-  .action(action)
-}
+```
+import  [NAME]        Import a file from your shatter list 
+export  [NAME] [PATH] Exports a file/directory to your shatter list
 ```
 
 ## Dependencies 
