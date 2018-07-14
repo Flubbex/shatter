@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "shatter":"node index.js"
+    "shatter": "node index.js"
+  },
+  "bin": {
+    "shatter": "./shatter"
   },
   "repository": {
     "type": "git",

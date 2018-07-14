@@ -6,12 +6,11 @@ Node CLI helper for easy cataloguing of JavaScript files
 import  [NAME]        Import a file from your shatter list 
 export  [NAME] [PATH] Exports a file/directory to your shatter list
 ```
-
 ## installation
 ```
 git clone https://github.com/Flubbex/shatter.git
-cd shatter && npm install
-npm run shatter
+cd shatter && npm install 
+npm link
 ```
 
 ## Dependencies 
